@@ -17,8 +17,8 @@ WITH leads AS (
             ELSE FALSE
         END AS is_converted,
         Status, 
-        created_date, 
-        last_modified_date, 
+        TO_TIMESTAMP(created_date, 'MM/DD/YY HH24:MI') as created_date,
+        TO_TIMESTAMP(last_modified_date , 'MM/DD/YY HH24:MI')as last_modified_date,
         last_activity_date,
         last_viewed_date, 
         capacity_c,
