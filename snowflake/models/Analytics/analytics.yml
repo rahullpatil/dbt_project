@@ -70,7 +70,7 @@ models:
         description: 'Notes from the last audit conducted.'
       - name: certificate_expiration_date
         description: 'Date when the providers certificate expires.'
-      - name: website_address
+      - name: website
         description: 'Website address of the provider.'
-      - name: is_converted
-        description: 'Boolean flag indicating whether the lead has been converted.'
+      - name: brightwheel_school_uuid_c
+        description: 'brightwheel school uuid.'
