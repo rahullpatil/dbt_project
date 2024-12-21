@@ -1,0 +1,76 @@
+version: 2
+
+models:
+  - name: dbt_leads_model
+    description: 'Standardized schema integrating Salesforce leads data with licensing and compliance information.'
+    columns:
+      - name: provider_id
+        description: 'Unique identifier for each provider.'
+      - name: first_name
+        description: 'First name of the provider.'
+      - name: last_name
+        description: 'Last name of the provider.'
+      - name: company
+        description: 'Company name of the provider.'
+      - name: address1
+        description: 'Primary address of the provider.'
+      - name: address2
+        description: 'Secondary address of the provider.'
+      - name: city
+        description: 'City where the provider is located.'
+      - name: state
+        description: 'State where the provider operates.'
+      - name: zip
+        description: 'Postal code for the provider address.'
+      - name: county
+        description: 'County where the provider is located.'
+      - name: first_issue_date
+        description: 'Date when the provider license was first issued.'
+      - name: email
+        description: 'Email address of the provider.'
+      - name: curriculum_type
+        description: 'Type of curriculum offered by the provider.'
+      - name: capacity
+        description: 'Capacity of the provider facility.'
+      - name: accepts_financial_aid
+        description: 'Indicates whether the provider accepts financial aid.'
+      - name: schedule
+        description: 'Operating schedule of the provider.'
+      - name: phone
+        description: 'Primary phone number of the provider.'
+      - name: operator
+        description: 'Operator or owner of the provider.'
+      - name: license_status
+        description: 'Status of the provider license.'
+      - name: license_number
+        description: 'Unique license number assigned to the provider.'
+      - name: license_issued
+        description: 'Date when the license was issued.'
+      - name: license_renewed
+        description: 'Date when the license was renewed.'
+      - name: license_issued_date
+        description: 'Formatted date when the license was issued.'
+      - name: compliance_frequency
+        description: 'Frequency of compliance checks.'
+      - name: operating_hours
+        description: 'Operating hours of the provider.'
+      - name: star_rating
+        description: 'Star rating assigned to the provider based on compliance.'
+      - name: compliance_monitoring_date
+        description: 'Date of the most recent compliance monitoring.'
+      - name: facility_type
+        description: 'Type of facility operated by the provider.'
+      - name: min_age
+        description: 'Minimum age accepted by the provider.'
+      - name: max_age
+        description: 'Maximum age accepted by the provider.'
+      - name: audit_date
+        description: 'Date of the last audit conducted.'
+      - name: audit_notes
+        description: 'Notes from the last audit conducted.'
+      - name: certificate_expiration_date
+        description: 'Date when the providers certificate expires.'
+      - name: website_address
+        description: 'Website address of the provider.'
+      - name: is_converted
+        description: 'Boolean flag indicating whether the lead has been converted.'
