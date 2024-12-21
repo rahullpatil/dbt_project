@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: dbt_leads_model
+  - name: fct_leads
     description: 'Standardized schema integrating Salesforce leads data with licensing and compliance information.'
     columns:
       - name: provider_id
