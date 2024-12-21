@@ -45,3 +45,22 @@ The project can be extended to integrate with BI tools such as Tableau or Power 
 Completed Successfully the model in local. 
 
 Feedback and contributions are welcome!
+
+
+
+
+*** Sample Query are below ***
+
+
+-- Total count of Leads
+
+select count( distinct provider_id)  
+from DBT_TEST.STG.fct_leads ;
+
+
+-- Total count of leads by year
+
+select year (created_date), count(*)
+from DBT_TEST.STG.fct_leads 
+group by 1
+order by 1;
