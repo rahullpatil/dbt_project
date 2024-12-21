@@ -26,7 +26,8 @@ WITH leads AS (
         title,
         outreach_stage_c AS curriculum_type,
         lead_source_last_updated_c AS certificate_expiration_date,
-        brightwheel_school_uuid_c AS website_address
+        website,
+        brightwheel_school_uuid_c
     FROM {{ source('stg','stg_salesforce_leads') }}
      WHERE country NOT LIKE '[0-9]%' -- Exclude invalid country values with numbers
 ),
@@ -123,7 +124,8 @@ SELECT
     source_s3.audit_date,
     source_s3.audit_notes,
     leads.certificate_expiration_date,
-    leads.website_address
+    leads.website,
+    leads.brightwheel_school_uuid_c
 FROM leads
 LEFT JOIN source_s1
     ON leads.company = source_s1.company
