@@ -4,6 +4,8 @@
 
 This repository contains a DBT project for modeling Salesforce leads data integrated with licensing and compliance information from source files provided. The standardized schema is designed to support analytical and operational use cases for monitoring provider performance and compliance.
 
+
+
 **Tradeoffs and Decisions**
 
 Schema Standardization: Focused on creating a unified schema to accommodate data from multiple sources, prioritizing key fields for analysis.
@@ -16,6 +18,8 @@ Capacity Validations: Ensured non-numeric values are excluded from capacity colu
 
 With additional time, a more refined folder structure and standardized database naming conventions could have been implemented to enhance organization and schema consistency.
 
+
+
 **Areas for Improvement**
 
 Scalability: Current pipeline processes data as a snapshot. Incremental updates could be implemented to process changes more efficiently with ETL pipelines in place from the source system.
@@ -25,6 +29,8 @@ Error Logging: Introduce logging mechanisms for data quality issues and transfor
 Testing: Add more rigorous testing with dbt test to validate assumptions about data integrity.
 
 Documentation: Expand documentation to cover data lineage and relationships between source systems.
+
+
 
 **Longer Term ETL Strategies**
 
@@ -37,6 +43,8 @@ Automation: Schedule and automate pipeline runs using Airflow/Fivetran.
 Monitoring: Set up dashboards for data observability to monitor pipeline performance and data quality or Data Anamoly.
 
 Data Governance: Implement role-based access control (RBAC) and data masking for sensitive fields if needed.
+
+
 
 **Additional Notes**
 
