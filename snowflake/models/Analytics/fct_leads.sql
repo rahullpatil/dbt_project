@@ -100,6 +100,7 @@ SELECT
     leads.Status, 
     leads.created_date, 
     leads.last_modified_date, 
+    leads.last_activity_date,
     leads.last_viewed_date, 
     leads.capacity_c,
     leads.lead_source,
